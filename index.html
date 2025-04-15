@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://kgiannopoulou.com/ crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#portfolio">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Developer</p>
+            <h1>Hi, I'm <span>Konstantina</span><br>Giannopoulou From Greece</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a Computer Science graduate passionate about Artificial Intelligence, currently exploring the field through self-driven research, projects, and blogging. I enjoy building tools, experimenting with models, and sharing insights as I learn. My goal is to continue my studies in AI and contribute to impactful, ethical innovation.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>AI & Machine Learning</span><br>TensorFlow, PyTorch, Data Analysis</li>
+                        <li><span>Web Development</span><br>React.js, Node.js, HTML/CSS</li>
+                        <li><span>Cloud & DevOps</span><br>Docker, Kubernetes, GCP</li>
+                      </ul>                      
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>AI Research & Projects – Built and trained ML models with TensorFlow and PyTorch, exploring NLP, computer vision, and ethical AI.</li>
+                        <li><span>2021 - Current</span><br>Technical Blogging – Writing in-depth articles on AI concepts, development tutorials, and project walkthroughs.</li>
+                        <li><span>2020 - Current</span><br>Web App Development – Created full-stack applications using React.js, Node.js, and MongoDB, focusing on real-world usability.</li>
+                      </ul>                      
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>BSc in Computer Science from University of Westrern Macedonia (UOWM).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Chatbot</h2>
+                <p>An AI-powered chatbot that understands and generates natural language conversations. Built with Seq2Seq and GPT models, it supports custom training with your own dataset.</p>
+                <a href="https://github.com/kgiannopoulou/Chatbot/tree/Chatbot-tensowflow2.0" target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>BookWise</h2>
+                <p>A hybrid recommender system that suggests books based on similar content (genre, author, title/description keywords), community ratings via collaborative filtering, and real-time book information from the Open Library or Google Books API.</p>
+                <a href="https://github.com/kgiannopoulou/BookWise/tree/main" target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>K-Quiz</h2>
+                <p>This project is a web-based quiz that helps users discover K-dramas or movies based on their preferences. The quiz then suggests a K-drama or movie that matches their selections.</p>
+                <a href="https://github.com/kgiannopoulou/K-Quiz " target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Research</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Self-Healing AI Models</h3>
+                    <p>Detecting & Fixing Their Own Mistakes</p>
+                    <a href="https://medium.com/@kgiannopoulou4033/self-healing-ai-models-detecting-fixing-their-own-mistakes-b18a7e646177 " target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Creating Video Games without Human Input</h3>
+                    <p>A Case Study in AI-Generated Design</p>
+                    <a href="https://medium.com/@kgiannopoulou4033/creating-video-games-without-human-input-a-case-study-in-ai-generated-design-6188dc10cbce " target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>A Beginner’s Guide to Neutral Networks</h3>
+                    <p>Simplifying Neural Networks So You Don’t Have To Struggle</p>
+                    <a href="https://medium.com/gopenai/a-beginners-guide-to-neutral-networks-383b8bff19ae " target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+                </div>
+            </div>
+        </div>
+        <a href="https://medium.com/@kgiannopoulou4033 " class="btn" target="_blank" rel="noopener noreferrer">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="contact">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>Email: kgiannopoulou4033@gmail.com</p>
+            <p>You can also reach out to me on the following platforms:</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/konstantina-giannopoulou-464668281/" target="_blank" class="social-icon">
+                  <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/kgiannopoulou" target="_blank" class="social-icon">
+                  <img src="images/github.png" alt="GitHub">
+                </a>
+              </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Konna.</p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
