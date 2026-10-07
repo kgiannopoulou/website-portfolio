@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konstantina Giannopoulou | Full-Stack Developer</title>
-    <meta name="description" content="Konstantina Giannopoulou — full-stack developer working with Next.js, TypeScript, Express and PostgreSQL. Portfolio, projects and writing on AI.">
-    <meta property="og:title" content="Konstantina Giannopoulou | Full-Stack Developer">
-    <meta property="og:description" content="Full-stack developer working with Next.js, TypeScript, Express and PostgreSQL.">
+    <title>Konstantina Giannopoulou | Junior Full-Stack Developer &amp; Security</title>
+    <meta name="description" content="Konstantina Giannopoulou — junior full-stack developer (TypeScript, React, Next.js, Node.js, Laravel, PostgreSQL/MySQL) with hands-on OT/IoT security projects. Based in Patras, Greece, open to relocation.">
+    <meta property="og:title" content="Konstantina Giannopoulou | Junior Full-Stack Developer &amp; Security">
+    <meta property="og:description" content="Full-stack web and mobile apps plus hands-on OT/ICS and IoT security labs.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kgiannopoulou.github.io/website-portfolio/">
     <meta property="og:image" content="https://kgiannopoulou.github.io/website-portfolio/images/logo.png">
     <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -19,20 +22,24 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo.png" class="logo" alt="Konstantina Giannopoulou logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Projects</a></li>
-                <li><a href="#portfolio">Blog</a></li>
+                <li><a href="#portfolio">Writing</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Developer</p>
+            <p>Junior Full-Stack Developer &amp; Security</p>
             <h1>Hi, I'm <span>Konstantina</span><br>Giannopoulou From Greece</h1>
+            <div class="header-buttons">
+                <a href="#services" class="btn btn-inline">See my projects</a>
+                <a href="images/my-cv.pdf" download="Konstantina-Giannopoulou-CV.pdf" class="btn btn-inline btn-ghost">Download CV</a>
+            </div>
         </div>
     </div>
 </div>
@@ -41,11 +48,11 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.png">
+                <img src="images/user.png" alt="Konstantina Giannopoulou">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>I'm a Computer Science graduate who builds full-stack applications — Next.js, TypeScript, Express, PostgreSQL — and researches Artificial Intelligence on the side, writing about AI concepts and experimenting with models. I got into development through ISP technical support, which is why I gravitate toward projects that solve real, messy problems rather than toy ones. My goal is to keep building useful software while continuing my research into impactful, ethical AI.</p>
+                <p>I'm a Computer Science graduate (University of Western Macedonia, 2025) who builds complete, tested software: full-stack web apps with TypeScript, React/Next.js, Node.js and Laravel on PostgreSQL/MySQL, a React Native app with an AI assistant, and hands-on OT/ICS and IoT security labs. I came into development through ISP technical support, so I like projects that solve real, messy problems and I document them properly: READMEs, architecture diagrams, tests and CI. I'm based in Patras, open to on-site, hybrid or remote roles, and happy to relocate.</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -54,94 +61,132 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>AI & Machine Learning</span><br>TensorFlow, PyTorch, Data Analysis</li>
-                        <li><span>Web Development</span><br>Next.js, TypeScript, Express, PostgreSQL, React.js</li>
-                        <li><span>Cloud & DevOps</span><br>Docker, Kubernetes, GCP</li>
-                      </ul>                      
+                        <li><span>Languages</span><br>TypeScript, JavaScript, Python, PHP, SQL, C++, HTML/CSS</li>
+                        <li><span>Web &amp; Mobile</span><br>React, Next.js, Node.js/Express, Laravel, React Native (Expo), REST APIs, Tailwind CSS</li>
+                        <li><span>Data</span><br>PostgreSQL, MySQL, SQLite, Oracle basics, SQL query tuning</li>
+                        <li><span>Security</span><br>Network monitoring (Scapy), Suricata, Wazuh, Modbus/TCP &amp; MQTT, IEC 62443, STRIDE, MITRE ATT&amp;CK for ICS, OWASP web vulnerabilities</li>
+                        <li><span>Tools</span><br>Git/GitHub, Docker, GitHub Actions CI, Jest/Pest/Vitest/pytest, Stripe, Claude API</li>
+                      </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Nov 2025 - Aug 2026</span><br>Technical Support Representative, Comsote Telecom – Mellon – Provided technical support to customers via phone for internet, network, and service-related issues; diagnosed and resolved connectivity, hardware, and software problems in a fast-paced environment.</li>
+                        <li><span>Nov 2025 - Aug 2026</span><br>Technical Support Representative, Cosmote Telecom – Mellon. Phone support for internet, network and service issues; diagnosed and resolved connectivity, hardware and software problems in a fast-paced environment.</li>
+                        <li><span>2024</span><br>Volunteer Judge, Robotex Competition, Patras. Evaluated robotics entries and gave feedback to teams.</li>
                       </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2019 - 2025</span><br>BSc in Computer Science from University of Western Macedonia (UOWM), Kastoria.</li>
+                        <li><span>2019 - 2025</span><br>BSc in Computer Science, University of Western Macedonia (UOWM), Kastoria.</li>
+                        <li><span>Certifications</span><br>IBM Full Stack Software Developer (Coursera), freeCodeCamp Responsive Web Design, Cisco Introduction to Cybersecurity &amp; Cybersecurity Essentials, Udemy Beginning C++.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- ---------services---------------- -->
+<!-- ---------projects---------------- -->
 <div id="services">
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
+
+        <h2 class="group-title"><i class="fas fa-code"></i> Software Development</h2>
         <div class="services-list">
             <div>
-                <i class="fas fa-theater-masks"></i>
-                <h2>Patra Sfyzei</h2>
-                <p>Community hub for Patras, Greece — local news, live road reports, events, and a business directory, open for anyone to contribute to.</p>
-                <a href="https://github.com/kgiannopoulou/patra-sfyzei" target="_blank" rel="noopener noreferrer">Learn more</a>
+                <i class="fas fa-server"></i>
+                <h2>Home Helper API</h2>
+                <p>Household sync backend: Laravel REST API on MySQL with an offline-first sync engine, queued jobs and push notifications, a React (Inertia) dashboard with charts, an Oracle admin lab, and GitHub Actions CI running 280+ tests.</p>
+                <p class="tags">Laravel · PHP · MySQL · React · Oracle · CI</p>
+                <a href="https://github.com/kgiannopoulou/home-helper-api" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+            <div>
+                <i class="fas fa-mobile-screen"></i>
+                <h2>Personal Home Helper</h2>
+                <p>All-in-one mobile app (food, fitness, kitchen, shopping, money, chores, planner, weather) with an AI assistant built on the Claude API that can act through 19 tools, plus a Wear OS companion. 230+ tests.</p>
+                <p class="tags">React Native · Expo · TypeScript · Claude API</p>
+                <a href="https://github.com/kgiannopoulou/personal-home-helper" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
             <div>
                 <i class="fas fa-cart-shopping"></i>
                 <h2>Full-Stack E-Commerce</h2>
-                <p>End-to-end e-commerce platform — Next.js, Express/TypeScript, PostgreSQL, JWT auth, Stripe Checkout, and an admin panel.</p>
-                <a href="https://github.com/kgiannopoulou/fullstack-ecommerce" target="_blank" rel="noopener noreferrer">Learn more</a>
+                <p>Catalog, cart, checkout and order history with bcrypt + JWT/httpOnly-cookie auth, role-based admin, Stripe Checkout with webhook fulfilment and server-side price validation, Dockerised PostgreSQL.</p>
+                <p class="tags">Next.js · Express · TypeScript · PostgreSQL · Stripe</p>
+                <a href="https://github.com/kgiannopoulou/fullstack-ecommerce" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
             <div>
                 <i class="fas fa-wifi"></i>
                 <h2>WiFi Troubleshooter</h2>
-                <p>A guided WiFi diagnostic tool built from real ISP support experience. The branching question tree lives in PostgreSQL and is fully editable via an admin panel, not hard-coded.</p>
-                <a href="https://github.com/kgiannopoulou/wifi-troubleshooter" target="_blank" rel="noopener noreferrer">Learn more</a>
-            </div>
-            <div>
-                <i class="fas fa-phone"></i>
-                <h2>Internet Support IVR</h2>
-                <p>Phone IVR for ISP support that actually resolves issues — LED-based diagnosis, guided reboots, and escalation only when a fix truly can't be self-served.</p>
-                <a href="https://github.com/kgiannopoulou/internet-support-ivr" target="_blank" rel="noopener noreferrer">Learn more</a>
-            </div>
-            <div>
-                <i class="fas fa-book"></i>
-                <h2>BookWise</h2>
-                <p>A hybrid recommender system that suggests books based on content similarity, collaborative filtering, and real-time data from the Open Library / Google Books API.</p>
-                <a href="https://github.com/kgiannopoulou/BookWise" target="_blank" rel="noopener noreferrer">Learn more</a>
+                <p>Guided diagnostic tool built from real ISP support work on 4 router models. The branching question tree is relational data in PostgreSQL, editable from an admin panel and rendered with a recursive SQL query.</p>
+                <p class="tags">Next.js · TypeScript · PostgreSQL</p>
+                <a href="https://github.com/kgiannopoulou/wifi-troubleshooter" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
         </div>
+
+        <h2 class="group-title"><i class="fas fa-shield-halved"></i> Cybersecurity</h2>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-industry"></i>
+                <h2>OT/ICS Security Lab</h2>
+                <p>PLC-controlled water tank over Modbus/TCP with IT/DMZ/OT segmentation, Suricata and Wazuh detection rules, mapped to IEC 62443, the Purdue model and MITRE ATT&amp;CK for ICS. Runs in Docker.</p>
+                <p class="tags">Python · Modbus · Suricata · Wazuh · Docker</p>
+                <a href="https://github.com/kgiannopoulou/ot-ics-cybersecurity-lab" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+            <div>
+                <i class="fas fa-satellite-dish"></i>
+                <h2>IoT Security Monitor</h2>
+                <p>Network monitor that captures and parses IoT traffic, keeps a device inventory and behaviour baseline, and raises alerts from 9 detection rules (port scans, ARP spoofing, MQTT abuse). Flask dashboard, Docker lab, 88 tests.</p>
+                <p class="tags">Python · Scapy · MQTT · SQLite · Flask</p>
+                <a href="https://github.com/kgiannopoulou/iot-security-monitor" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+            <div>
+                <i class="fas fa-clipboard-check"></i>
+                <h2>Smart Factory Threat Assessment</h2>
+                <p>Consulting-style STRIDE threat model and OT risk assessment of a fictional factory: 30 threats, IEC 62443 / NIST mapping and a prioritised remediation roadmap, generated as a 26-page PDF report.</p>
+                <p class="tags">Threat modelling · IEC 62443 · NIST · Python</p>
+                <a href="https://github.com/kgiannopoulou/smart-factory-threat-assessment" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+            <div>
+                <i class="fas fa-bug"></i>
+                <h2>Web Security Practice</h2>
+                <p>A CLI scanner for security headers, cookies, TLS, exposed files and CORS with remediation reports, plus write-ups of 120+ PortSwigger Web Security Academy labs (SQLi, XSS, SSRF, JWT and more).</p>
+                <p class="tags">TypeScript · Node.js · OWASP · PortSwigger</p>
+                <a href="https://github.com/kgiannopoulou/websec-scanner" target="_blank" rel="noopener noreferrer">Scanner</a>
+                <a href="https://github.com/kgiannopoulou/PortSwigger-Web-Security-Academy" target="_blank" rel="noopener noreferrer" class="second-link">Lab write-ups</a>
+            </div>
+        </div>
+        <a href="https://github.com/kgiannopoulou?tab=repositories" class="btn" target="_blank" rel="noopener noreferrer">All projects on GitHub</a>
     </div>
 </div>
-<!-- ----------portfolio------------ -->
+<!-- ----------writing------------ -->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Research</h1>
+        <h1 class="sub-title">My Writing</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/work-1.png">
+                <img src="images/work-1.png" alt="Self-Healing AI Models article">
                 <div class="layer">
                     <h3>Self-Healing AI Models</h3>
-                    <p>Detecting & Fixing Their Own Mistakes</p>
-                    <a href="https://medium.com/@kgiannopoulou4033/self-healing-ai-models-detecting-fixing-their-own-mistakes-b18a7e646177" target="_blank" rel="noopener noreferrer">
+                    <p>Detecting &amp; Fixing Their Own Mistakes</p>
+                    <a href="https://medium.com/@kgiannopoulou4033/self-healing-ai-models-detecting-fixing-their-own-mistakes-b18a7e646177" target="_blank" rel="noopener noreferrer" aria-label="Read article">
                     <i class="fas fa-external-link-alt"></i>
                 </a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-2.png">
+                <img src="images/work-2.png" alt="Creating Video Games without Human Input article">
                 <div class="layer">
                     <h3>Creating Video Games without Human Input</h3>
                     <p>A Case Study in AI-Generated Design</p>
-                    <a href="https://medium.com/@kgiannopoulou4033/creating-video-games-without-human-input-a-case-study-in-ai-generated-design-6188dc10cbce" target="_blank" rel="noopener noreferrer">
+                    <a href="https://medium.com/@kgiannopoulou4033/creating-video-games-without-human-input-a-case-study-in-ai-generated-design-6188dc10cbce" target="_blank" rel="noopener noreferrer" aria-label="Read article">
                     <i class="fas fa-external-link-alt"></i>
                 </a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="images/work-3.png" alt="A Beginner's Guide to Neural Networks article">
                 <div class="layer">
-                    <h3>A Beginner’s Guide to Neutral Networks</h3>
+                    <h3>A Beginner’s Guide to Neural Networks</h3>
                     <p>Simplifying Neural Networks So You Don’t Have To Struggle</p>
-                    <a href="https://medium.com/gopenai/a-beginners-guide-to-neutral-networks-383b8bff19ae" target="_blank" rel="noopener noreferrer">
+                    <a href="https://medium.com/gopenai/a-beginners-guide-to-neutral-networks-383b8bff19ae" target="_blank" rel="noopener noreferrer" aria-label="Read article">
                     <i class="fas fa-external-link-alt"></i>
                 </a>
                 </div>
@@ -155,21 +200,22 @@
     <div class="container">
         <div class="contact">
             <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fas fa-paper-plane"></i>Email: kgiannopoulou4033@gmail.com</p>
+            <p>Open to junior developer and junior security roles in Greece or abroad.</p>
+            <p><i class="fas fa-paper-plane"></i> <a href="mailto:kgiannopoulou4033@gmail.com" class="mail-link">kgiannopoulou4033@gmail.com</a></p>
             <p>You can also reach out to me on the following platforms:</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/konstantina-giannopoulou-464668281/" target="_blank" class="social-icon">
+                <a href="https://www.linkedin.com/in/konstantina-giannopoulou-464668281/" target="_blank" rel="noopener noreferrer" class="social-icon">
                   <img src="images/linkedin.png" alt="LinkedIn">
                 </a>
-                <a href="https://github.com/kgiannopoulou" target="_blank" class="social-icon">
+                <a href="https://github.com/kgiannopoulou" target="_blank" rel="noopener noreferrer" class="social-icon">
                   <img src="images/github.png" alt="GitHub">
                 </a>
               </div>
-            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            <a href="images/my-cv.pdf" download="Konstantina-Giannopoulou-CV.pdf" class="btn btn2">Download CV</a>
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright © Konna.</p>
+        <p>Copyright © Konstantina Giannopoulou.</p>
     </div>
 </div>
 

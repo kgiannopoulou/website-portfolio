@@ -367,3 +367,71 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
+/* ---------header buttons / project groups-------- */
+.header-buttons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.btn.btn-inline{
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+    padding: 12px 36px;
+    background: #ff004f;
+}
+.btn.btn-inline.btn-ghost{
+    background: transparent;
+}
+.btn.btn-inline.btn-ghost:hover{
+    background: #ff004f;
+}
+.group-title{
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 50px;
+    color: #fff;
+}
+.group-title i{
+    color: #ff004f;
+    margin-right: 10px;
+}
+.services-list div p.tags{
+    margin-top: 15px;
+    color: #ff6b93;
+    font-weight: 400;
+}
+.services-list div:hover p.tags{
+    color: #fff;
+}
+.services-list div a.second-link{
+    margin-left: 20px;
+}
+.services-list div a:hover{
+    text-decoration: underline;
+}
+.mail-link{
+    color: #fff;
+}
+@media only screen and (max-width: 600px){
+    .services-list div h2{
+        font-size: 24px;
+    }
+    .services-list div{
+        padding: 30px;
+    }
+    .btn.btn-inline{
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+    .group-title{
+        font-size: 22px;
+    }
+}
+#services .services-list{
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+}
+#services .services-list div h2{
+    font-size: 26px;
+}
